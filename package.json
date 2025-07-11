@@ -1,11 +1,13 @@
 {
   "name": "puma-json-server",
   "version": "1.0.0",
+  "description": "JSON server for Puma app",
+  "main": "index.js",
   "scripts": {
-    "start": "json-server-auth db.json --port 10000"
+    "start": "json-server-auth db.json --host 0.0.0.0 --port $PORT"
   },
   "dependencies": {
-    "json-server": "^0.17.3",
+    "json-server": "^0.17.4",
     "json-server-auth": "^2.1.0"
   }
 }
